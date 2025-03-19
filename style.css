@@ -1,68 +1,113 @@
-/* Reset */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    display: flex;
-    background: #f4f4f4;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 250px;
-    background: #2c3e50;
-    color: white;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
-}
-
-.profile {
+    padding: 0;
+    background: #f8f9fa;
     text-align: center;
 }
 
-.profile img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-
-.profile h2 {
-    font-size: 20px;
-}
-
-.menu {
-    margin-top: 20px;
-}
-
-.menu button, .menu a {
-    display: block;
+header {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
+    top: 0;
 }
 
-.menu a {
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
-.menu button:hover, .menu a:hover {
-    background: #1a252f;
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 50px;
+    text-align: left;
+    margin-top: 50px;
 }
 
-/* Main Content */
-.content {
-    margin-left: 270px;
-    padding: 20px;
-    width: 100%;
+.text-container {
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    color: gray;
+}
+
+.highlight {
+    color: blue;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 200px;
+    border-radius: 50%;
 }
 
 .hidden {
     display: none;
 }
+
+#projectsSection, #contactSection {
+    background: white;
+    padding: 50px 0;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raju Mailapalli - Portfolio</title>
+    <title>Raju Mailapalli - Pega Developer</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -11,66 +11,43 @@
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <img src="profile.jpg" alt="Raju Mailapalli">
-            <h2>Raju Mailapalli</h2>
-            <p>Pega Developer | CSA | CSSA</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                </ul>
-            </nav>
-            <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank">LinkedIn</a>
+            <img src="profile.jpg" alt="Raju Mailapalli" class="profile-img">
+            <h1>Raju Mailapalli</h1>
+            <p class="title">Pega Developer</p>
+            <p class="experience">3.5 years at TCS</p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <button id="projectsBtn">
+                    <img src="projects-icon.png" alt="Projects">
+                </button>
+                <button id="contactBtn">
+                    <img src="contact-icon.png" alt="Contact">
+                </button>
+            </div>
             <button id="darkModeToggle">Dark Mode</button>
         </aside>
 
         <!-- Main Content -->
-        <main class="content">
-            <section id="about">
-                <h1>I'm a Pega Developer</h1>
-                <p>Experienced in Pega PRPC, API integrations, and debugging tools.</p>
+        <main>
+            <section id="intro">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Click on the icons to explore more about my projects and contact details.</p>
             </section>
 
-            <section id="experience">
-                <h2>Experience</h2>
-                <h3>Pega Developer - Tata Consultancy Services</h3>
-                <p><strong>Client:</strong> Saudi Telecom Company (STC)</p>
-                <p><strong>Project:</strong> FSM Assurance [Pega 8.6]</p>
-                <ul>
-                    <li>Worked on Sections, UI enhancements, and Case Management.</li>
-                    <li>Implemented Queue Processors for background processing.</li>
-                    <li>Integrated external systems using Connect REST and Service REST.</li>
-                </ul>
-            </section>
-
-            <section id="projects">
+            <section id="projects" class="hidden">
                 <h2>Projects</h2>
-                <p><strong>Migration Application (PEGA Platform)</strong></p>
-                <p>Developed a case management system integrating APIs for workflow automation.</p>
-                <ul>
-                    <li>Configured Work Groups and Work Queues.</li>
-                    <li>Developed case lifecycle components like flows and data transforms.</li>
-                </ul>
+                <p><strong>Project Name:</strong> Field Service Management (FSM) Assurance</p>
+                <p><strong>Client:</strong> Saudi Telecom Company (STC)</p>
+                <p><strong>Role:</strong> Pega Developer</p>
+                <p>Developed a migration application using the PEGA platform for streamlining case management.</p>
             </section>
 
-            <section id="education">
-                <h2>Education</h2>
-                <ul>
-                    <li>B.Tech [EEE] – NSRIT – 8.3 GPA</li>
-                    <li>Diploma [EEE] – Sai Ganapathi Polytechnic – 76.92%</li>
-                    <li>SSC – Sai Ravindra School – 8.7 CGPA</li>
-                </ul>
-            </section>
-
-            <section id="certifications">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>Pega Certified System Architect (CSA)</li>
-                    <li>Pega Certified Senior System Architect (CSSA)</li>
-                </ul>
+            <section id="contact" class="hidden">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:rajumailapalli@example.com">rajumailapalli@example.com</a></p>
+                <p>Phone: +91 9876543210</p>
             </section>
         </main>
     </div>

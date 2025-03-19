@@ -5,65 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raju Mailapalli - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Raju Mailapalli</h1>
-        <p>Pega Developer | CSA | CSSA</p>
-        <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank">LinkedIn</a>
-    </header>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="profile.jpg" alt="Raju Mailapalli">
+            <h2>Raju Mailapalli</h2>
+            <p>Pega Developer | CSA | CSSA</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank">LinkedIn</a>
+            <button id="darkModeToggle">Dark Mode</button>
+        </aside>
 
-    <section id="about">
-        <img src="profile.jpg" alt="Raju Mailapalli">
-        <p>Experienced Pega Developer with 3+ years in PRPC, certified as CSA & CSSA.</p>
-    </section>
+        <!-- Main Content -->
+        <main class="content">
+            <section id="about">
+                <h1>I'm a Pega Developer</h1>
+                <p>Experienced in Pega PRPC, API integrations, and debugging tools.</p>
+            </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Pega Certified System Architect (CSA)</li>
-            <li>Pega Certified Senior System Architect (CSSA)</li>
-        </ul>
-    </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <h3>Pega Developer - Tata Consultancy Services</h3>
+                <p><strong>Client:</strong> Saudi Telecom Company (STC)</p>
+                <p><strong>Project:</strong> FSM Assurance [Pega 8.6]</p>
+                <ul>
+                    <li>Worked on Sections, UI enhancements, and Case Management.</li>
+                    <li>Implemented Queue Processors for background processing.</li>
+                    <li>Integrated external systems using Connect REST and Service REST.</li>
+                </ul>
+            </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>B.Tech (EEE)</strong> - Nadimpalli Satyanarayana Raju Institute of Technology - 8.3 GPA</li>
-            <li><strong>Diploma (EEE)</strong> - Sai Ganapathi Polytechnic - 76.92%</li>
-            <li><strong>SSC</strong> - Sai Ravindra School - 8.7 CGPA</li>
-        </ul>
-    </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p><strong>Migration Application (PEGA Platform)</strong></p>
+                <p>Developed a case management system integrating APIs for workflow automation.</p>
+                <ul>
+                    <li>Configured Work Groups and Work Queues.</li>
+                    <li>Developed case lifecycle components like flows and data transforms.</li>
+                </ul>
+            </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Field Service Management (FSM) Assurance</h3>
-        <p><strong>Company:</strong> Tata Consultancy Services Ltd, Hyderabad</p>
-        <p><strong>Client:</strong> Saudi Telecom Company (STC)</p>
-        <p><strong>Technology:</strong> Pega 8.6</p>
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>B.Tech [EEE] – NSRIT – 8.3 GPA</li>
+                    <li>Diploma [EEE] – Sai Ganapathi Polytechnic – 76.92%</li>
+                    <li>SSC – Sai Ravindra School – 8.7 CGPA</li>
+                </ul>
+            </section>
 
-        <h4>Project Summary:</h4>
-        <p>The Migration Application, developed using the Pega Platform, is designed to streamline case management by integrating with external systems through APIs. 
-        The application receives case creation requests from the CRM system, processes the data based on predefined task templates, and dynamically generates cases. 
-        These cases are then routed to the respective systems for further processing.</p>
-
-        <h4>Responsibilities:</h4>
-        <ul>
-            <li>Developed UI components like dropdowns, radio buttons, auto-complete fields, and enhancements for existing screens.</li>
-            <li>Worked on Case Creation, Case Management, Case Life Cycle, Flows, Flow Actions, Sections, and Harnesses.</li>
-            <li>Configured and managed Work Groups & Work Queues for efficient task distribution.</li>
-            <li>Developed Data Pages, Data Transforms, Activities, and Report Definitions.</li>
-            <li>Integrated external systems using Connectors & Services (REST APIs).</li>
-            <li>Implemented Queue Processors to efficiently handle background processing.</li>
-            <li>Analyzed and fixed defects as part of the QA/UAT testing teams.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2025 Raju Mailapalli</p>
-    </footer>
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Pega Certified System Architect (CSA)</li>
+                    <li>Pega Certified Senior System Architect (CSSA)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

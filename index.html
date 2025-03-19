@@ -9,46 +9,56 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <div class="profile">
-            <img src="assets/profile.jpg" alt="Raju Mailapalli">
-            <h2>Raju Mailapalli</h2>
-            <p>Pega Developer</p>
-            <p>3.5 years at TCS</p>
-        </div>
-        <nav class="menu">
-            <button id="projectsBtn"><i class="fas fa-briefcase"></i> Projects</button>
-            <button id="contactsBtn"><i class="fas fa-envelope"></i> Contact</button>
-            <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-        </nav>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="content">
-        <section id="default">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Click the icons to explore more!</p>
-        </section>
-
-        <section id="projects" class="hidden">
-            <h1>My Projects</h1>
+    <header>
+        <nav>
+            <div class="logo">Raju</div>
             <ul>
-                <li>Project 1 - Description</li>
-                <li>Project 2 - Description</li>
-                <li>Project 3 - Description</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#" id="projectsBtn">Projects</a></li>
+                <li><a href="#" id="contactBtn">Contact</a></li>
             </ul>
-        </section>
+        </nav>
+    </header>
 
-        <section id="contact" class="hidden">
-            <h1>Contact Me</h1>
-            <p>Email: mailapalli.raju@gmail.com</p>
-            <p>Phone: +91 XXXXX XXXXX</p>
-        </section>
-    </main>
+    <section class="hero">
+        <div class="text-container">
+            <h1>Hi, I'm <span class="highlight">Raju Mailapalli</span></h1>
+            <h2>Pega Developer</h2>
+            <p>3.5 years of experience at TCS</p>
+            <button class="contact-btn" id="contactShow">Contact</button>
+        </div>
+        <div class="image-container">
+            <img src="profile.jpg" alt="Raju Mailapalli">
+        </div>
+    </section>
 
+    <section id="projectsSection" class="hidden">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactSection" class="hidden">
+        <h2>Contact Me</h2>
+        <p>Email: raju@mail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank">Raju Mailapalli</a></p>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

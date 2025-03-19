@@ -6,6 +6,7 @@
     <title>Raju Mailapalli - Pega Developer</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -15,33 +16,25 @@
             <h1>Raju Mailapalli</h1>
             <p class="title">Pega Developer</p>
             <p class="experience">3.5 years at TCS</p>
+
             <div class="icons">
-                <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank">
-                    <img src="linkedin.png" alt="LinkedIn">
-                </a>
-                <button id="projectsBtn">
-                    <img src="projects-icon.png" alt="Projects">
-                </button>
-                <button id="contactBtn">
-                    <img src="contact-icon.png" alt="Contact">
-                </button>
+                <a href="https://www.linkedin.com/in/raju-mailapalli/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <i id="projectsIcon" class="fas fa-tasks"></i> 
+                <i id="contactIcon" class="fas fa-envelope"></i>
             </div>
-            <button id="darkModeToggle">Dark Mode</button>
         </aside>
 
         <!-- Main Content -->
-        <main>
-            <section id="intro">
-                <h2>Welcome to My Portfolio</h2>
-                <p>Click on the icons to explore more about my projects and contact details.</p>
-            </section>
-
+        <main class="content">
             <section id="projects" class="hidden">
                 <h2>Projects</h2>
-                <p><strong>Project Name:</strong> Field Service Management (FSM) Assurance</p>
-                <p><strong>Client:</strong> Saudi Telecom Company (STC)</p>
-                <p><strong>Role:</strong> Pega Developer</p>
-                <p>Developed a migration application using the PEGA platform for streamlining case management.</p>
+                <p><strong>Field Service Management (FSM) Assurance</strong></p>
+                <p>Developed a case management system for STC using Pega 8.6.</p>
+                <ul>
+                    <li>Integrated REST APIs for external system communication.</li>
+                    <li>Configured Work Queues & Case Life Cycles.</li>
+                    <li>Debugged issues using Clipboard & Tracer.</li>
+                </ul>
             </section>
 
             <section id="contact" class="hidden">

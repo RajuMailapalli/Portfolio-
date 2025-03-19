@@ -2,79 +2,61 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    background-color: white;
-    color: black;
+    background-color: #f4f4f4;
+    color: #333;
     transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
 }
 
 .container {
     display: flex;
-    width: 100%;
 }
 
 .sidebar {
     width: 250px;
+    padding: 20px;
     background: #2c3e50;
     color: white;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
-}
-
-.sidebar img {
-    width: 100px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
-.sidebar h2 {
     text-align: center;
 }
 
-.sidebar nav ul {
-    list-style: none;
-    padding: 0;
+.sidebar img.profile-img {
+    width: 100px;
+    border-radius: 50%;
 }
 
-.sidebar nav ul li {
-    margin: 15px 0;
-}
-
-.sidebar nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.content {
-    margin-left: 270px;
-    padding: 20px;
-    width: calc(100% - 250px);
-}
-
-h1, h2 {
-    color: #34495e;
+.sidebar .icons img {
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 button {
-    margin-top: 20px;
     padding: 10px;
     background: #3498db;
     color: white;
     border: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-.dark-mode {
-    background: black;
-    color: white;
+button:hover {
+    background: #2980b9;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
 }
 
 .dark-mode .sidebar {
-    background: #1a1a1a;
-}
-
-.dark-mode h1, .dark-mode h2 {
-    color: #f1c40f;
+    background: #1b2733;
 }
